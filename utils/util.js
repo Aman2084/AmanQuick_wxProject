@@ -1,10 +1,3 @@
-var n = 0
-
-const tests = () =>{
-  n ++
-  console.log('======' +n)
-}
-
 var callbacks = []
 
 const addCallBack = ($fun) =>{
@@ -54,6 +47,9 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime,
-  tests: tests
+  formatTime: formatTime
+  ,addCallBack: addCallBack
+  ,removeCallBack: removeCallBack
+  ,hasCallBack: hasCallBack
+  ,sendMsg: sendMsg
 }
